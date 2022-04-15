@@ -349,11 +349,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-        buttons = [
-            [
-                InlineKeyboardButton('🌟  ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🌟', url=f'https://t.me/inline_film')
-            ]
-            ]
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
